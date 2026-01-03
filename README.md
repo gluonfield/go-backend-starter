@@ -19,11 +19,6 @@ A production-ready Go backend template with GraphQL, PostgreSQL, and dependency 
 ## Quick Start
 
 ```bash
-# Configure database
-cp application.yaml application.local.yaml
-# Edit application.local.yaml with your database credentials
-
-# Run the server
 make run-server
 ```
 
