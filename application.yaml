@@ -1,0 +1,19 @@
+# Config version: 2024-12-09
+graphqlapi:
+  port: 8888
+  validatorType: "jwk"
+  jwtJwksUrl: ""
+  enableIntrospection: true
+
+db:
+  url: "postgres://postgres:postgres@localhost:5432/postgres?sslmode=disable"
+  maxConns: 10
+  minConns: 2
+  maxConnLifetime: "30m"
+  maxConnIdleTime: "5m"
+
+openrouter:
+  apiKey: ""
+
+openai:
+  apiKey: ""
