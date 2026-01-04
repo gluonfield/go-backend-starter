@@ -107,8 +107,8 @@ func NewGraphQLRouter(
 	})
 
 	authMiddleware := authz.Middleware(srv, tokenValidator.ValidateToken, logger)
-	router.Handle("/", playground.Handler("GraphQL playground", "/query"))
-	router.Handle("/query", authMiddleware)
+	router.Handle("/", playground.Handler("GraphQL playground", "/graphql"))
+	router.Handle("/graphql", authMiddleware)
 
 	return router
 }
