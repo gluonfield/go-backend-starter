@@ -1,6 +1,6 @@
 # Config version: 2024-12-09
 graphqlapi:
-  port: 8888
+  port: 4000
   validatorType: "jwk"
   jwtJwksUrl: ""
   enableIntrospection: true

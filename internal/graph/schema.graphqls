@@ -12,8 +12,14 @@ type User {
   name: String!
 }
 
+type Example {
+  id: ID!
+  email: String!
+}
+
 type Query {
   todos: [Todo!]!
+  example: Example!
 }
 
 input NewTodo {

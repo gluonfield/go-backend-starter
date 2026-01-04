@@ -22,6 +22,14 @@ func (r *queryResolver) Todos(ctx context.Context) ([]*model1.Todo, error) {
 	panic(fmt.Errorf("not implemented: Todos - todos"))
 }
 
+// Example is the resolver for the example field.
+func (r *queryResolver) Example(ctx context.Context) (*model1.Example, error) {
+	return &model1.Example{
+		ID:    "1",
+		Email: "test@example.com",
+	}, nil
+}
+
 // Mutation returns MutationResolver implementation.
 func (r *Resolver) Mutation() MutationResolver { return &mutationResolver{r} }
 
